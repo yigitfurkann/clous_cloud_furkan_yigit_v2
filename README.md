@@ -35,7 +35,7 @@
 
 ```bash
 git clone https://github.com/yigitfurkann/clous_cloud_furkan_yigit_v2.git
-cd clous
+cd clous_cloud_furkan_yigit_v2/clous
 ```
 
 ### 2. Bağımlılıkları yükleyin
