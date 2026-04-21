@@ -80,7 +80,6 @@ clous/
 
 | Model | Context | Özellik |
 |---|---|---|
-| DeepSeek-V3.1-128K | 128K | En güncel, uzun bağlam |
 | DeepSeek-V3.2 | 160K | Yüksek verimlilik |
 | GLM-5 | 198K | ZHIPU AI genel amaçlı |
 | GLM-5.1 | 198K | Kodlama odaklı |
