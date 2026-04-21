@@ -1,4 +1,4 @@
-# ☁️ Clous-Cloud-Furkan-Yigit. — Huawei MaaS Interface
+# ☁️ Clous-Cloud-Furkan-Yigit — Huawei MaaS Interface
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python" />
