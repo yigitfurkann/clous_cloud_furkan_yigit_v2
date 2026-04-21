@@ -109,4 +109,4 @@ if __name__ == '__main__':
     print("  Clous.cloud — Huawei MaaS Interface")
     print("  → http://localhost:5000")
     print()
-    app.run(debug=True, port=5000, threaded=True)
+    app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
