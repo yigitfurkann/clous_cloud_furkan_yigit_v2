@@ -97,6 +97,8 @@ def chat():
         return jsonify({"error": str(e)}), 500
 
 
+import os  # Dosyanın en başında os kütüphanesinin olduğundan emin ol
+
 if __name__ == '__main__':
     print()
     print("  ██████╗██╗      ██████╗ ██╗   ██╗███████╗")
@@ -107,6 +109,11 @@ if __name__ == '__main__':
     print("  ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚══════╝")
     print()
     print("  Clous.cloud — Huawei MaaS Interface")
-    print("  → http://localhost:5000")
+    
+    # Render'ın atadığı PORT'u alıyoruz, bulamazsak 5000'i kullanıyoruz.
+    port = int(os.environ.get("PORT", 5000))
+    print(f"  → Running on port: {port}")
     print()
-    app.run(debug=True, port=5000, threaded=True)
+
+    # host="0.0.0.0" eklemezsen Render trafiği içeri alamaz!
+    app.run(debug=True, host="0.0.0.0", port=port, threaded=True)
