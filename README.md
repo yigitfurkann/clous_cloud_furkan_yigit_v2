@@ -116,4 +116,7 @@ Railway'e başlatma komutunu söyler: `python app.py`
 
 ## 📝 Lisans
 
-MIT — Furkan Yiğit / Clous.cloud
+MIT — Furkan Yiğit  Cloud Solution Architect / Clous Cloud
+
+<img width="1222" height="404" alt="clous2tr" src="https://github.com/user-attachments/assets/52e03cc1-ba7f-4bb6-87ef-0fb440c4a453" />
+
