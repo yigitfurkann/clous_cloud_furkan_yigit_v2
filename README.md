@@ -25,7 +25,6 @@
 - **Temperature & Max Tokens** — İstek ayarlarını sürükle-bırak ile kontrol edin
 - **Sohbet geçmişi** — Konuşmayı `.txt` olarak dışa aktarın
 - **Temiz UI** — Sora + JetBrains Mono ile minimal beyaz tema
-- **Ücretsiz dağıtım** — Render.com üzerinde kolayca yayınlanır
 
 ---
 
