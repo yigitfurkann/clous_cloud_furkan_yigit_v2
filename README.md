@@ -1,122 +1,111 @@
-# 🌐 Clous.cloud — Huawei MaaS Interface
+# ☁️ Clous — Huawei MaaS Interface
 
-> Huawei ModelArts MaaS servisleri için sade, hızlı ve kullanıma hazır bir sohbet arayüzü.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python" />
+  <img src="https://img.shields.io/badge/Flask-3.x-black?style=flat-square&logo=flask" />
+  <img src="https://img.shields.io/badge/Huawei%20MaaS-API-red?style=flat-square" />
+  <img src="https://img.shields.io/badge/Render-Deployed-46E3B7?style=flat-square&logo=render" />
+</p>
 
-**Canlı:** [clous.cloud](https://www.clous.cloud)  
-**Geliştirici:** Furkan Yiğit
+<p align="center">
+  Huawei ModelArts Studio (MaaS) üzerindeki büyük dil modellerini kolayca kullanabileceğiniz, hafif ve şık bir web arayüzü.
+</p>
+
+<p align="center">
+  🌐 <strong><a href="https://clous-cloud-furkan-yigit.onrender.com/">Canlıyı Deneyin →</a></strong>
+</p>
 
 ---
 
-## 📁 Proje Yapısı
+## ✨ Özellikler
+
+- **Streaming yanıtlar** — Gerçek zamanlı token akışı, cevaplar yazılırken görüntülenir
+- **Çoklu model desteği** — DeepSeek-V3.1-128K, DeepSeek-V3.2, GLM-5, GLM-5.1
+- **Sistem promptu** — Modelin davranışını özelleştirin
+- **Temperature & Max Tokens** — İstek ayarlarını sürükle-bırak ile kontrol edin
+- **Sohbet geçmişi** — Konuşmayı `.txt` olarak dışa aktarın
+- **Temiz UI** — Sora + JetBrains Mono ile minimal beyaz tema
+- **Ücretsiz dağıtım** — Render.com üzerinde kolayca yayınlanır
+
+---
+
+## 🚀 Başlarken
+
+### 1. Depoyu klonlayın
+
+```bash
+git clone https://github.com/kullaniciadi/clous.git
+cd clous
+```
+
+### 2. Bağımlılıkları yükleyin
+
+```bash
+pip install flask requests
+```
+
+### 3. Uygulamayı çalıştırın
+
+```bash
+python app.py
+```
+
+Tarayıcıda `http://localhost:5000` adresini açın.
+
+---
+
+## 🔧 Kullanım
+
+1. **Endpoint URL** — Huawei MaaS konsolundan aldığınız API endpoint adresini girin
+2. **API Anahtarı** — MaaS'tan oluşturduğunuz Bearer token'ı yapıştırın
+3. **Model** — Kullanmak istediğiniz modeli seçin
+4. **Bağlan & Başlat** butonuna tıklayın
+5. Sohbete başlayın!
+
+> MaaS API anahtarı ve endpoint için [Huawei ModelArts Studio](https://www.huaweicloud.com/product/modelarts.html) konsoluna giriş yapmanız gerekir.
+
+---
+
+## 📦 Proje Yapısı
 
 ```
 clous/
-├── app.py                  # Flask backend — API proxy
-├── requirements.txt        # Python bağımlılıkları
-├── railway.toml            # Railway deploy konfigürasyonu
+├── app.py              # Flask backend — API proxy
 └── templates/
-    └── index.html          # Tek sayfa frontend (logo + favicon gömülü)
+    └── index.html      # Tek dosya frontend (HTML + CSS + JS)
 ```
-
----
-
-## ⚙️ Nasıl Çalışır?
-
-```
-Tarayıcı → Flask (app.py) → Huawei MaaS API
-```
-
-Kullanıcı API bilgilerini frontend'e girer. Flask bu bilgileri alıp Huawei MaaS endpoint'ine proxy olarak iletir. Streaming (Server-Sent Events) ile yanıtlar gerçek zamanlı akar.
 
 ---
 
 ## 🤖 Desteklenen Modeller
 
-| Model | Tip |
-|---|---|
-| DeepSeek-V3.2 | Text Generation |
-| DeepSeek-V3.1 | Text Generation |
-| DeepSeek-V3 | Text Generation |
-| GLM-5 | Text Generation |
-| GLM-5.1 | Text Generation |
-| DeepSeek-R1-0528 | Text Generation |
+| Model | Context | Özellik |
+|---|---|---|
+| DeepSeek-V3.1-128K | 128K | En güncel, uzun bağlam |
+| DeepSeek-V3.2 | 160K | Yüksek verimlilik |
+| GLM-5 | 198K | ZHIPU AI genel amaçlı |
+| GLM-5.1 | 198K | Kodlama odaklı |
 
 ---
 
-## 🔌 API Bağlantısı
-
-| Alan | Değer |
-|---|---|
-| **Endpoint** | `https://api-ap-southeast-1.modelarts-maas.com/openai/v1/chat/completions` |
-| **Auth** | Bearer Token (Huawei MaaS API Key) |
-| **Format** | OpenAI Chat Completions uyumlu |
-
-API Key almak için: Huawei Cloud → ModelArts → MaaS → API Key Management
 
 ---
 
-🚀 Deploy — Cloud
-Bu repoyu GitHub üzerinden bağlayarak bir Web Service oluştur.
+## 🛠️ Teknolojiler
 
-Aşağıdaki yapılandırmayı kullan:
-
-Root Directory: clous
-
-Build Command: pip install -r requirements.txt
-
-Start Command: python app.py
-
-Projenin canlı versiyonuna bu adresten ulaşabilirsin:
-👉 https://clous-cloud-furkan-yigit.onrender.com/
-
-Environment variable gerekmez — PORT ve HOST ayarları kod içerisinde otomatik olarak yapılandırılmıştır.
----
-
-## 💻 Lokal Geliştirme
-
-```bash
-# Bağımlılıkları yükle
-pip install -r requirements.txt
-
-# Uygulamayı başlat
-python app.py
-
-# Tarayıcıda aç
-http://localhost:5000
-```
+- **Backend:** Python, Flask
+- **Frontend:** Vanilla HTML/CSS/JS (bağımlılık yok)
+- **API:** Huawei MaaS OpenAI-uyumlu endpoint
+- **Font:** Sora, JetBrains Mono
 
 ---
 
-## 🗂️ Dosya Detayları
+## 📄 Lisans
 
-### `app.py`
-Flask backend. Tek görevi: frontend'den gelen isteği alıp Huawei MaaS API'sine iletmek ve streaming yanıtı tarayıcıya aktarmak.
-
-- `GET /` → `templates/index.html` render eder
-- `POST /api/chat` → Huawei MaaS'a proxy, SSE stream döner
-
-### `templates/index.html`
-Tüm frontend tek dosyada. Harici bağımlılık yok (logo ve favicon base64 gömülü).
-
-- **Sol panel:** Endpoint URL, API Key, Model seçimi, Temperature, Max Tokens, Sistem Promptu
-- **Sağ panel:** Sohbet ekranı, hızlı başlangıç butonları, mesaj geçmişi
-- **Topbar:** Dışa Aktar, Kopyala, Temizle
-
-### `requirements.txt`
-```
-flask>=3.0.0
-requests>=2.31.0
-gunicorn>=21.2.0
-```
-
-### `railway.toml`
-Railway'e başlatma komutunu söyler: `python app.py`
+MIT License — Furkan YİĞİT Cloud Solution Architect | Clous Cloud 
 
 ---
 
-## 📝 Lisans
-
-MIT — Furkan Yiğit  Cloud Solution Architect / Clous Cloud
-
-<img width="1222" height="404" alt="clous2tr" src="https://github.com/user-attachments/assets/52e03cc1-ba7f-4bb6-87ef-0fb440c4a453" />
-
+<p align="center">
+  <a href="https://clous-cloud-furkan-yigit.onrender.com/">clous-cloud-furkan-yigit.onrender.com</a> · Made with ☁️
+</p>
