@@ -1,5 +1,6 @@
 [build]
 builder = "nixpacks"
+buildCommand = "pip install flask requests" # Kütüphaneleri buraya ekledik
 
 [deploy]
 startCommand = "python app.py"
