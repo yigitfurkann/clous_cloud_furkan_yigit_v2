@@ -55,14 +55,21 @@ API Key almak için: Huawei Cloud → ModelArts → MaaS → API Key Management
 
 ---
 
-## 🚀 Deploy — Railway
+🚀 Deploy — Cloud
+Bu repoyu GitHub üzerinden bağlayarak bir Web Service oluştur.
 
-1. Bu repoyu [railway.app](https://railway.app) üzerinde **New Project → Deploy from GitHub** ile bağla
-2. Railway otomatik olarak `railway.toml` ve `requirements.txt` dosyalarını okur
-3. Deploy tamamlanınca verilen URL üzerinden erişilebilir
+Aşağıdaki yapılandırmayı kullan:
 
-**Environment variable gerekmez** — PORT otomatik atanır.
+Root Directory: clous
 
+Build Command: pip install -r requirements.txt
+
+Start Command: python app.py
+
+Projenin canlı versiyonuna bu adresten ulaşabilirsin:
+👉 https://clous-cloud-furkan-yigit.onrender.com/
+
+Environment variable gerekmez — PORT ve HOST ayarları kod içerisinde otomatik olarak yapılandırılmıştır.
 ---
 
 ## 💻 Lokal Geliştirme
