@@ -34,7 +34,7 @@
 ### 1. Depoyu klonlayın
 
 ```bash
-git clone https://github.com/kullaniciadi/clous.git
+git clone https://github.com/yigitfurkann/clous_cloud_furkan_yigit_v2.git
 cd clous
 ```
 
