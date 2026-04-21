@@ -109,3 +109,12 @@ MIT License — Furkan YİĞİT Cloud Solution Architect | Clous Cloud
 <p align="center">
   <a href="https://clous-cloud-furkan-yigit.onrender.com/">clous-cloud-furkan-yigit.onrender.com</a> · Made with ☁️
 </p>
+
+## 👨‍💻 Geliştirici
+
+<p align="center">
+  Geliştirici ile iletişime geçmek için:<br><br>
+  <a href="https://github.com/yigitfurkann">
+    <img src="https://img.shields.io/badge/GitHub-yigitfurkann-181717?style=flat-square&logo=github" />
+  </a>
+</p>
